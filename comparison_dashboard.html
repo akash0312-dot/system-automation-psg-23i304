@@ -1,0 +1,52 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 1 vs Day 2 Comparison Dashboard</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 30px; background: #f5f7fb; color: #1f2937; }
+            h1 { color: #111827; }
+            .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #d1d5db; padding: 10px; text-align: left; }
+            th { background: #e5e7eb; }
+            .summary { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+            .chip { background: #dbeafe; padding: 10px 15px; border-radius: 8px; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Day 1 vs Day 2 Comparison Dashboard</h1>
+            <div class="summary">
+                <div class="chip">Scenarios: 5</div>
+                <div class="chip">Rule-based outputs: 5</div>
+                <div class="chip">ML predictions: 3</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Case</th>
+                        <th>Temperature</th>
+                        <th>Pressure</th>
+                        <th>Vibration</th>
+                        <th>Current</th>
+                        <th>RPM</th>
+                        <th>Day 1 Rule</th>
+                        <th>Day 1 Action</th>
+                        <th>Day 2 Prediction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Normal</td><td>66.0</td><td>2.8</td><td>12.0</td><td>9.0</td><td>1500</td><td>NO_RULE_FIRED</td><td>CONTINUE_NORMAL</td><td>LOW_PRESSURE</td></tr>
+<tr><td>High Temp</td><td>90.5</td><td>3.1</td><td>18.0</td><td>12.0</td><td>1800</td><td>HIGH_TEMP</td><td>STOP_MACHINE</td><td>LOW_PRESSURE</td></tr>
+<tr><td>High Pressure</td><td>72.0</td><td>4.6</td><td>22.0</td><td>11.0</td><td>1700</td><td>HIGH_PRESSURE</td><td>VENT_VALVE</td><td>HIGH_VIBRATION</td></tr>
+<tr><td>Vibration Alert</td><td>78.0</td><td>3.8</td><td>45.5</td><td>10.0</td><td>1600</td><td>EXCESSIVE_VIBRATION</td><td>TRIGGER_MAINTENANCE_ALERT</td><td>HIGH_VIBRATION</td></tr>
+<tr><td>Critical</td><td>96.0</td><td>4.5</td><td>50.0</td><td>18.0</td><td>2000</td><td>CRITICAL_OVERLOAD</td><td>EMERGENCY_POWER_CUT</td><td>MOTOR_OVERLOAD</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    
